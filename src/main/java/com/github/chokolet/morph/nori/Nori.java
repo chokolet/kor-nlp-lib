@@ -27,7 +27,7 @@ public class Nori implements MorphInterface {
 
     // 토크닝 추출
     @Override
-    public List<MorphInfoVo> geToken(String targetText) {
+    public List<MorphInfoVo> getToken(String targetText) {
         return getMorphInfos(targetText, false);
     }
 

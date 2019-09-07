@@ -38,16 +38,16 @@ public class MorphTest {
 
     @Test
     public void testOneMorph() {
-        List get = MorphFactory.getInstance().reuseFactoryMorph(MorphFactory.DefaultMorph.BIGRAM).geToken(targetText);
+        List get = MorphFactory.getInstance().reuseFactoryMorph(MorphFactory.DefaultMorph.BIGRAM).getToken(targetText);
         log.info("BIGRAM : [{}]", gsonBuilder.toJson(get));
-        get = MorphFactory.getInstance().reuseFactoryMorph(MorphFactory.DefaultMorph.UNIGRAM).geToken(targetText);
+        get = MorphFactory.getInstance().reuseFactoryMorph(MorphFactory.DefaultMorph.UNIGRAM).getToken(targetText);
         log.info("unigram : [{}]", gsonBuilder.toJson(get));
         Assert.assertNotNull(get);
     }
 
     @Test
     public void testSeunjeonMorph() {
-        List get = MorphFactory.getInstance().reuseFactoryMorph(MorphFactory.DefaultMorph.SEUNJEON).geToken(targetText);
+        List get = MorphFactory.getInstance().reuseFactoryMorph(MorphFactory.DefaultMorph.SEUNJEON).getToken(targetText);
         get.stream().forEach(System.out::println);
 
         get = MorphFactory.getInstance().reuseFactoryMorph(MorphFactory.DefaultMorph.SEUNJEON).getLemma(targetText);
@@ -59,7 +59,7 @@ public class MorphTest {
     public void testNoriMorph() {
         List get = MorphFactory.getInstance().reuseFactoryMorph(MorphFactory.DefaultMorph.NORI).getLemma(targetText);
         get.stream().forEach(System.out::println);
-        get = MorphFactory.getInstance().reuseFactoryMorph(MorphFactory.DefaultMorph.NORI).geToken(targetText);
+        get = MorphFactory.getInstance().reuseFactoryMorph(MorphFactory.DefaultMorph.NORI).getToken(targetText);
         get.stream().forEach(System.out::println);
         Assert.assertNotNull(get);
     }
@@ -81,7 +81,7 @@ public class MorphTest {
             executorService.submit(() -> {
                 List get = null;
                 try {
-                    get = MorphFactory.getInstance().reuseFactoryMorph(MorphFactory.DefaultMorph.NORI).geToken(targetText);
+                    get = MorphFactory.getInstance().reuseFactoryMorph(MorphFactory.DefaultMorph.NORI).getToken(targetText);
                 } catch (Exception e) {
                     e.printStackTrace();
                 }

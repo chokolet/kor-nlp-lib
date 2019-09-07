@@ -15,7 +15,7 @@ import java.util.regex.Pattern;
 public class SpaceToken implements MorphInterface {
 
     @Override
-    public List<MorphInfoVo> geToken(String targetText) {
+    public List<MorphInfoVo> getToken(String targetText) {
 
         List<MorphInfoVo> morphInfoVoList = new ArrayList<>();
         Matcher matcher = Pattern.compile("\\S+").matcher(targetText);
@@ -30,7 +30,7 @@ public class SpaceToken implements MorphInterface {
 
     @Override
     public List<MorphInfoVo> getLemma(String targetText) {
-        return geToken(targetText);
+        return getToken(targetText);
     }
 
 }

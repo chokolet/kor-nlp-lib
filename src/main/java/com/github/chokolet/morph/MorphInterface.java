@@ -11,7 +11,7 @@ import java.util.List;
 public interface MorphInterface {
 
     // 토크닝 추출
-    List<MorphInfoVo> geToken(String targetText);
+    List<MorphInfoVo> getToken(String targetText);
 
     // 원형 추출
     List<MorphInfoVo> getLemma(String targetText);

@@ -22,7 +22,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 public class Seunjeon implements MorphInterface {
 
     @Override
-    public List<MorphInfoVo> geToken(String targetText) {
+    public List<MorphInfoVo> getToken(String targetText) {
         List<MorphInfoVo> morphToken = new ArrayList<>();
         Iterable<LNode> getNode = Analyzer.parseJava(targetText);
         int i = 0;

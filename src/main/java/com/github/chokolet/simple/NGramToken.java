@@ -30,7 +30,7 @@ public class NGramToken implements MorphInterface {
      * @return
      */
     @Override
-    public List<MorphInfoVo> geToken(String targetText) {
+    public List<MorphInfoVo> getToken(String targetText) {
 
         List<MorphInfoVo> morphInfoVoList = new ArrayList<>();
         int idx = 0;
@@ -40,7 +40,7 @@ public class NGramToken implements MorphInterface {
         char[] getTargetText;
 
         SpaceToken spaceToken = new SpaceToken();
-        List<MorphInfoVo> tmpMorph = spaceToken.geToken(targetText);
+        List<MorphInfoVo> tmpMorph = spaceToken.getToken(targetText);
 
         StringBuilder stackText;
 
@@ -90,7 +90,7 @@ public class NGramToken implements MorphInterface {
         char[] getTargetText;
 
         SpaceToken spaceToken = new SpaceToken();
-        List<MorphInfoVo> tmpMorph = spaceToken.geToken(targetText);
+        List<MorphInfoVo> tmpMorph = spaceToken.getToken(targetText);
 
         for (MorphInfoVo morphInfoVo : tmpMorph) {
 
