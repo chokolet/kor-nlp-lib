@@ -40,11 +40,11 @@
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/org.apache.lucene/lucene-analyzers-nori -->
-        <dependency>
+      <!--  <dependency>
             <groupId>org.apache.lucene</groupId>
             <artifactId>lucene-analyzers-nori</artifactId>
-            <version>7.6.0</version>
-        </dependency>
+            <version>8.1.0</version>
+        </dependency>-->
 
         <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
         <dependency>

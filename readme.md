@@ -5,14 +5,13 @@
 ## Getting Started
 
 - `MorphFactory` class 에서  `getNLPApi`  및 `getToken, getLemma` 메서드를 사용하여 특정 Text에 대해 형태소 분석 한 결과를 추출
-- nori analyzer , seunjeon analyzer, Ngram, SpaceToken , sentence
+- seunjeon analyzer, Ngram, SpaceToken , sentence
 ### Prerequisites / usage
 
 - 형태소 분석기
 
   | morph    | based                                          | opensource                                                   | comment                                                      |
   | -------- | ---------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-  | Nori     | Kuromoji based ( mecab based ) / mecab ko dict | [오픈소스](https://github.com/apache/lucene-solr/tree/master/lucene/analysis/nori) | [Nori Slide Share](https://www.elastic.co/kr/blog/nori-the-official-elasticsearch-plugin-for-korean-language-analysis) / [기술블로그](https://www.elastic.co/kr/blog/nori-the-official-elasticsearch-plugin-for-korean-language-analysis) |
   | Seunjeon | mecab based / mecab ko dict                    | [오픈소스](https://bitbucket.org/eunjeon/seunjeon/src/master/) | [기술블로그](http://eunjeon.blogspot.com/)                   |
   
 - Seunjeon to WiseNLU ( ETRI NLU ) format

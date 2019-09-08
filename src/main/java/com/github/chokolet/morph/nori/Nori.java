@@ -3,18 +3,8 @@ package com.github.chokolet.morph.nori;
 import com.github.chokolet.morph.MorphInterface;
 import com.github.chokolet.morph.vo.MorphInfoVo;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.commons.lang3.ObjectUtils;
-import org.apache.commons.lang3.StringUtils;
-import org.apache.lucene.analysis.TokenStream;
-import org.apache.lucene.analysis.ko.KoreanAnalyzer;
-import org.apache.lucene.analysis.ko.KoreanTokenizer;
-import org.apache.lucene.analysis.ko.tokenattributes.PartOfSpeechAttribute;
-import org.apache.lucene.analysis.tokenattributes.CharTermAttribute;
-import org.apache.lucene.analysis.tokenattributes.OffsetAttribute;
 
-import java.io.IOException;
-import java.util.*;
-import java.util.stream.Collectors;
+import java.util.List;
 
 /**
  * Created by CK on 2019-04-22.
@@ -22,7 +12,16 @@ import java.util.stream.Collectors;
  */
 @Slf4j
 public class Nori implements MorphInterface {
+    @Override
+    public List<MorphInfoVo> getToken(String targetText) {
+        return null;
+    }
 
+    @Override
+    public List<MorphInfoVo> getLemma(String targetText) {
+        return null;
+    }
+/*
     KoreanAnalyzer koreanAnalyzer = new KoreanAnalyzer(null, KoreanTokenizer.DecompoundMode.DISCARD, new HashSet<>(), false);
 
     // 토크닝 추출
@@ -66,12 +65,12 @@ public class Nori implements MorphInterface {
     }
 
 
-    /**
+    *//**
      * Version 1
      * 원형 복원 추출
      * 중복위치값에 대한 부분은 제거
      * 학습할 때는 이게 맞는거 같음.. ( 원형 복원 ) /  해야되궁..
-     */
+     *//*
     private List<MorphInfoVo> extractVersionOrg(TokenStream tokenStream, OffsetAttribute offsetAttribute, CharTermAttribute charTermAttribute, PartOfSpeechAttribute partOfSpeechAttribute) throws IOException {
         List<MorphInfoVo> morphInfoVoList = new ArrayList<>();
         int index = 0;
@@ -86,10 +85,10 @@ public class Nori implements MorphInterface {
         return morphInfoVoList;
     }
 
-    /**
+    *//**
      * Version 2
      * 원문 우선 추출
-     */
+     *//*
     private List<MorphInfoVo> extractVersionTxt(String targetText, TokenStream tokenStream, OffsetAttribute offsetAttribute, PartOfSpeechAttribute partOfSpeechAttribute) throws IOException {
 
         int index = 0;
@@ -116,5 +115,5 @@ public class Nori implements MorphInterface {
         }
 
         return linkedMorphInfo.entrySet().stream().map(Map.Entry::getValue).collect(Collectors.toList());
-    }
+    }*/
 }
