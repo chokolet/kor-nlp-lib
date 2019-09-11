@@ -67,7 +67,8 @@ public class Seunjeon implements MorphInterface {
     }
 
     public MorphVo getMorphVo(AtomicInteger incDocId, String targetText, Morpheme morpheme, LNode deInf) {
-        return new MorphVo(incDocId.getAndIncrement(), morpheme.getSurface(), morpheme.getFeatureHead(), targetText.substring(0, deInf.beginOffset() + morpheme.getSurface().length()).getBytes().length, morpheme.getCost());
+        return new MorphVo(incDocId.getAndIncrement(), morpheme.getSurface(), morpheme.getFeatureHead(), deInf.beginOffset(), morpheme.getCost());
+//        return new MorphVo(incDocId.getAndIncrement(), morpheme.getSurface(), morpheme.getFeatureHead(), targetText.substring(0, deInf.beginOffset() + morpheme.getSurface().length()).getBytes().length, morpheme.getCost());
     }
 
 }
