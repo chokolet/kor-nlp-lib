@@ -50,8 +50,8 @@ public class MorphTest {
         List get = MorphFactory.getInstance().reuseFactoryMorph(MorphFactory.DefaultMorph.SEUNJEON).getToken(targetText);
         get.stream().forEach(System.out::println);
 
-        get = MorphFactory.getInstance().reuseFactoryMorph(MorphFactory.DefaultMorph.SEUNJEON).getLemma(targetText);
-        get.stream().forEach(System.out::println);
+        List get2 = MorphFactory.getInstance().reuseFactoryMorph(MorphFactory.DefaultMorph.SEUNJEON).getLemma(targetText);
+        get2.stream().forEach(System.out::println);
         Assert.assertNotNull(get);
     }
 
