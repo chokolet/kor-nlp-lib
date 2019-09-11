@@ -49,12 +49,12 @@ public class Seunjeon implements MorphInterface {
                 for (LNode deInf : lNode.deCompoundJava()) {
 
                     if (deInf.morpheme().deComposite().size() == 0) {
-                        morphVo = getMorphVo(incDocId, targetText, deInf.morpheme(), lNode);
+                        morphVo = getMorphVo(incDocId, deInf.morpheme(), lNode);
                         morphToken.add(new MorphInfoVo(morphVo.getPosition(), incDocId.get(), morphVo.getLemma(), morphVo.getType()));
                     } else {
                         List<Morpheme> morphemeList = JavaConverters.seqAsJavaList(deInf.morpheme().deComposite());
                         for (Morpheme morpheme : morphemeList) {
-                            morphVo = getMorphVo(incDocId, targetText, morpheme, lNode);
+                            morphVo = getMorphVo(incDocId, morpheme, lNode);
                             morphToken.add(new MorphInfoVo(morphVo.getPosition(), incDocId.get(), morphVo.getLemma(), morphVo.getType()));
                         }
                     }
@@ -66,9 +66,8 @@ public class Seunjeon implements MorphInterface {
 
     }
 
-    public MorphVo getMorphVo(AtomicInteger incDocId, String targetText, Morpheme morpheme, LNode deInf) {
+    public MorphVo getMorphVo(AtomicInteger incDocId, Morpheme morpheme, LNode deInf) {
         return new MorphVo(incDocId.getAndIncrement(), morpheme.getSurface(), morpheme.getFeatureHead(), deInf.beginOffset(), morpheme.getCost());
-//        return new MorphVo(incDocId.getAndIncrement(), morpheme.getSurface(), morpheme.getFeatureHead(), targetText.substring(0, deInf.beginOffset() + morpheme.getSurface().length()).getBytes().length, morpheme.getCost());
     }
 
 }
