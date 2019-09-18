@@ -45,7 +45,7 @@
 
   - java 기본 segment sentence
 
-  - [문장 분리기 비교글]([http://semantics.kr/%ED%95%9C%EA%B5%AD%EC%96%B4-%ED%98%95%ED%83%9C%EC%86%8C-%EB%B6%84%EC%84%9D%EA%B8%B0-%EB%B3%84-%EB%AC%B8%EC%9E%A5-%EB%B6%84%EB%A6%AC-%EC%84%B1%EB%8A%A5%EB%B9%84%EA%B5%90/](http://semantics.kr/한국어-형태소-분석기-별-문장-분리-성능비교/)) 보고 반영해봄
+  - [문장 분리기 비교글](http://semantics.kr/%ED%95%9C%EA%B5%AD%EC%96%B4-%ED%98%95%ED%83%9C%EC%86%8C-%EB%B6%84%EC%84%9D%EA%B8%B0-%EB%B3%84-%EB%AC%B8%EC%9E%A5-%EB%B6%84%EB%A6%AC-%EC%84%B1%EB%8A%A5%EB%B9%84%EA%B5%90/) 보고 반영해봄
 
     ```java
     List<String> tmp = JavaDefaultSentence.getSentence(tmpText);
