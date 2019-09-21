@@ -1,9 +1,9 @@
-package com.github.chokolet.morph.etri;
+package com.github.chokolet.misc.etri;
 
-import com.github.chokolet.morph.etri.vo.MorphEvalVo;
-import com.github.chokolet.morph.etri.vo.MorphVo;
-import com.github.chokolet.morph.etri.vo.SentenceVo;
-import com.github.chokolet.morph.etri.vo.WordVo;
+import com.github.chokolet.misc.etri.vo.MorphEvalVo;
+import com.github.chokolet.misc.etri.vo.MorphVo;
+import com.github.chokolet.misc.etri.vo.SentenceVo;
+import com.github.chokolet.misc.etri.vo.WordVo;
 import org.apache.commons.lang3.ObjectUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.bitbucket.eunjeon.seunjeon.Analyzer;

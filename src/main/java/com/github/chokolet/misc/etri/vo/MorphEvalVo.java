@@ -1,4 +1,4 @@
-package com.github.chokolet.morph.etri.vo;
+package com.github.chokolet.misc.etri.vo;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;

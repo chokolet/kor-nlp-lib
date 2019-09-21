@@ -1,4 +1,4 @@
-package com.github.chokolet.morph.etri.util;
+package com.github.chokolet.misc.etri.util;
 
 import java.util.HashSet;
 import java.util.Set;

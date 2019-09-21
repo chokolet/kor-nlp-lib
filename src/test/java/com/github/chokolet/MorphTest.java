@@ -1,9 +1,9 @@
 package com.github.chokolet;
 
-import com.github.chokolet.misc.Jaso;
+import com.github.chokolet.misc.etc.Jaso;
 import com.github.chokolet.morph.MorphFactory;
-import com.github.chokolet.morph.etri.SeunjeonToEtri;
-import com.github.chokolet.morph.etri.vo.SentenceVo;
+import com.github.chokolet.misc.etri.SeunjeonToEtri;
+import com.github.chokolet.misc.etri.vo.SentenceVo;
 import com.github.chokolet.sentence.SegmentSentence;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
