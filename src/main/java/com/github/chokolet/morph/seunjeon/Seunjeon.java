@@ -2,9 +2,8 @@ package com.github.chokolet.morph.seunjeon;
 
 
 import com.github.chokolet.morph.MorphInterface;
-import com.github.chokolet.morph.etri.vo.MorphVo;
+import com.github.chokolet.misc.etri.vo.MorphVo;
 import com.github.chokolet.morph.vo.MorphInfoVo;
-import org.apache.commons.lang3.ObjectUtils;
 import org.bitbucket.eunjeon.seunjeon.Analyzer;
 import org.bitbucket.eunjeon.seunjeon.Eojeol;
 import org.bitbucket.eunjeon.seunjeon.LNode;

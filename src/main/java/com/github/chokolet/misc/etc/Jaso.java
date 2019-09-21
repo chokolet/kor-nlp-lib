@@ -1,4 +1,4 @@
-package com.github.chokolet.misc;
+package com.github.chokolet.misc.etc;
 
 import java.util.HashMap;
 

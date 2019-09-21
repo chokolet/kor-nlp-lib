@@ -1,6 +1,6 @@
-package com.github.chokolet.morph.etri.vo;
+package com.github.chokolet.misc.etri.vo;
 
-import com.github.chokolet.morph.etri.util.TagUtils;
+import com.github.chokolet.misc.etri.util.TagUtils;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
